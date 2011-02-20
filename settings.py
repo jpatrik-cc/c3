@@ -94,7 +94,12 @@ INSTALLED_APPS = (
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
     'django.contrib.gis',
-    'world',
+    'south',
+    'customer',
+    'discovery',
+    #'selection',
+    #'payment',
+    #'the_other_one',
 )
 
 try:

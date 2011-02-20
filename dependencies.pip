@@ -1,0 +1,15 @@
+# This file collects all required third-party applications that are needed
+# to run this project. Later you can install all these apps in a row
+# using pip. Example::
+#
+#     pip install -U -r production.pip
+
+
+# Please favor released packages whenever possible over installing packages
+# using the editable (-e) flag. If you must use an editable package, pin it to a specific 
+# commit ID (pip freeze can help you here if you didn't use a specific commit ID when installing
+# originally)
+#
+
+Django==1.2.5
+South==0.7.2
