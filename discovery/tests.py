@@ -19,4 +19,5 @@ class PaymentAreasTest(TestCase):
         area = PaymentArea.objects.create(identifier='SJ Lund',
                                           area=centralstation,
                                           owner=customer)
+        self.failUnless(PaymentArea.objects.all()[0].area.contains(p))
         self.failUnless(area in list(PaymentArea.objects.filter(area__contains=p)))

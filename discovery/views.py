@@ -5,7 +5,6 @@ from cococloud.discovery.models import PaymentArea
 
 def point(request):
     lat, long = request.GET.get('position', '13.18686,55.70605').split(',')
-    import ipdb; ipdb.set_trace()
     p = Point(float(lat.strip()), float(long.strip()))
     options = PaymentArea.objects.filter(area__contains=p)
     return JsonResponse([{'identifier':i.identifier, 'owner':i.owner.name} 
