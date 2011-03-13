@@ -38,7 +38,7 @@ class PaymentAreasTest(TestCase):
             reverse('local_discovery')+'?position=13.18686,55.70605')
         self.failUnlessEqual(response.status_code, 200)
         self.failUnlessEqual(json.loads(response.content), 
-                             [{u'owner': u'SJ', u'identifier': u'SJ Lund'}])
+                             [{u'owner': u'SJ', u'identifier': u'SJ Lund', u'id':2}])
 
         response = self.client.get(
             reverse('local_discovery')+'?position=34.18686,25.70605')
