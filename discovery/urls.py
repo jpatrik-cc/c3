@@ -1,5 +1,5 @@
 from django.conf.urls.defaults import *
 
 urlpatterns = patterns('cococloud.discovery.views',
-    (r'^$', 'point'),
+    url(r'^$', 'local_options', name='local_discovery'),
 )
