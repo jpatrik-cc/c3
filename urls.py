@@ -12,4 +12,5 @@ urlpatterns = patterns('',
     # Uncomment the next line to enable the admin:
     (r'^admin/', include(admin.site.urls)),
     (r'^discovery/', include('cococloud.discovery.urls')),
+    (r'^selection/', include('cococloud.selection.urls')),
 )

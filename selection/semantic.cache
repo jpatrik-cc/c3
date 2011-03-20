@@ -1,0 +1,38 @@
+;; Object selection/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "selection/"
+  :tables (list 
+   (semanticdb-table "models.py"
+    :major-mode 'python-mode
+    :tags '(("django.contrib.gis.db" include nil (dependency-file none) [1 41]) ("cococloud.discovery.models" include nil (dependency-file none) [42 92]) ("\"\"\"
+Generalize cases:
+ * Parking (Ghent):
+   - Only one product
+   - Open/Close hours
+   - Product options affect pricing
+   - Limited quantity per area
+   - Custom parking provider
+
+ * Services (Max):
+   - Open/Close hours
+   - Unlimited but can be flagged as not available
+   - Local provider
+   
+ * Retail (Ikea):
+   - Open/Close hours
+   - Limited quantity 
+   - Likely use a web provider or custom provider
+
+ * Local Traffic:
+   - Time sensitive
+   - Likely use a web provider or custom provider
+
+\"\"\"" code nil nil [247 752]) ("Products" type (:superclasses ("models.Model") :members (("area" variable nil (reparse-symbol indented_block_body) [788 825]) ("name" variable nil (reparse-symbol indented_block_body) [830 869]) ("price" variable nil (reparse-symbol indented_block_body) [874 915])) :type "class") nil [754 916]))
+    :file "models.py"
+    :pointmax 921
+    )
+   )
+  :file "semantic.cache"
+  :semantic-tag-version "2.0pre4"
+  :semanticdb-version "2.0pre4"
+  )
